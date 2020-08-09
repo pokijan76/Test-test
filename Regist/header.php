@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,15 +19,23 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="logmen">
-            <form action="includes/login.inc.php" method="post">
-                <input type="text" name="mailid" placeholder="Username/Email...">
-                <input type="text" name="pwd" placeholder="Password...">
-                <button type="submit" name="login-submit" class="btn">Login</button>
-            </form>
-            <a href="signup.php">Signup</a>
-            <form action="includes/logout.inc.php" method="post">
-                <button type="submit" name="logout-submit" class="btn">Logout</button>
-            </form>
+        <?php
+                    if (isset($_SESSION['userId'])){
+                        echo '<form action="../includes/logout.inc.php" method="post">
+                        <button type="submit" name="logout-submit" class="btn">Logout</button>
+                    </form>';
+                    }
+                    else{
+                        echo ' <form action="../includes/login.inc.php" method="post">
+                        <input type="text" name="mailid" placeholder="Username/Email...">
+                        <input type="password" name="pwd" placeholder="Password...">
+                        <button type="submit" name="login-submit" class="btn">Login</button>
+                    </form>';
+                    }
+                ?>
+           
+            <a href="signup.php">SignUp</a>
+            
         </div>
         </nav>
     </header>
