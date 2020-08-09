@@ -16,14 +16,14 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="logmen">
-            <form action="includes/login.inc.php" method="post">
+            <form action="includes/login.inc.php" class='form-login' method="post">
                 <input type="text" name="mailid" placeholder="Username/Email...">
                 <input type="text" name="pwd" placeholder="Password...">
                 <button type="submit" name="login-submit" class="btn">Login</button>
             </form>
             <a href="signup.php">Signup</a>
             <form action="includes/logout.inc.php" method="post">
-                <button type="submit" name="logout-submit" class="btn">Logout</button>
+                <button type="submit" name="logout-submit" class="btn hide">Logout</button>
             </form>
         </div>
         </nav>

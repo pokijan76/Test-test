@@ -1,49 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
 /* header */
-.navbar{
-    overflow: hidden;
-    background-color: #dddddd;
-    position: fixed;
-    top: 0;
-    width: 100%;
+.navbar {
+	overflow: hidden;
+	background-color: #dddddd;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2em;
 }
 
-.navbar a{
-    float: left;
-    display: block;
-    color: #2b2b2b;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.hide {
+	display: none;
 }
 
-.navbar a:hover{
-    background: #2b2b2bdd;
-    color: #dddddd;
-    cursor: pointer;
+.navbar a {
+	float: left;
+	display: block;
+	color: #2b2b2b;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.logmen{
-    float: right;
+.navbar a:hover {
+	background: #2b2b2bdd;
+	color: #dddddd;
+	cursor: pointer;
 }
 
-.btn{
-    background-color: #2b2b2b;
-    color: #dddddd;
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.logmen {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.btn:hover{
-    background-color:#dddddd;
-    color: #2b2b2b;
-    cursor: pointer;
+.form-login {
+	margin-right: 1em;
+}
+
+.btn {
+	background-color: #2b2b2b;
+	color: #dddddd;
+}
+
+.btn:hover {
+	background-color: #dddddd;
+	color: #2b2b2b;
+	cursor: pointer;
 }
 
 /* index */
-.wrapper-main{
-    display: block;
-    position: fixed;
+.wrapper-main {
+	display: block;
+	position: fixed;
 }
