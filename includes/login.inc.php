@@ -48,7 +48,7 @@ if (isset($_POST['login-submit'])){
     }
 
 }
-else{
-    header("Location: ../Regist/signup.php");
-    exit();
+// else{
+//     header("Location: ../Regist/signup.php");
+//     exit();
 }
