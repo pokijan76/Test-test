@@ -30,12 +30,10 @@
                         <input type="text" name="mailid" placeholder="Username/Email...">
                         <input type="password" name="pwd" placeholder="Password...">
                         <button type="submit" name="login-submit" class="btn">Login</button>
-                    </form>';
+                        </form>
+                        <a href="signup.php">SignUp</a>';
                     }
-                ?>
-           
-            <a href="signup.php">SignUp</a>
-            
+                ?>           
         </div>
         </nav>
     </header>
