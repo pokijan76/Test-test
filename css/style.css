@@ -1,4 +1,4 @@
-* {
+/* * {
 	box-sizing: border-box;
 }
 
@@ -9,7 +9,7 @@ html {
 	position: relative;
 }
 
-/* header */
+
 .navbar {
 	overflow: hidden;
 	background-color: #dddddd;
@@ -63,7 +63,7 @@ ul {
 	cursor: pointer;
 }
 
-/* index */
+
 .wrapper-main {
 	position: relative;
 	width: 100%;
@@ -94,4 +94,4 @@ ul {
 	width: 100%;
 	margin: 0.5rem;
 	padding: 0.5em 1em;
-}
+} */
