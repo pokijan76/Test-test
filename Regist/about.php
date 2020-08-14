@@ -6,7 +6,7 @@
     <div class="wrapper-main">
             <section class="section-default">
                 <p>
-                This Web app is under development
+                Made by Pokijan
                 </p>
             </section>
     </div>

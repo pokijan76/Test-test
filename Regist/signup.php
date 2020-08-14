@@ -4,7 +4,7 @@
 
     <main>
     <div class="wrapper-main">
-            <section class="section-default">
+            <section class="section-default" id="signup">
                 <h1>Sign Up</h1>
                 <?php
                 error_reporting (E_ALL ^ E_NOTICE);
