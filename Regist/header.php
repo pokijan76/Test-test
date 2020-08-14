@@ -13,17 +13,30 @@
     <header> 
         <nav class="navbar">
         <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="#">Portofolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <?php
+        error_reporting (E_ALL ^ E_NOTICE);
+            if (isset($_SESSION['userId'])){
+        echo 
+            '<li><a href="index.php">Home</a></li>
+            <li><a href="profile.php">Profile</a></li>
+            <li><a href="#">Friends</a></li>
+            <li><a href="about.php">About</a></li>';
+            }
+            else{
+            echo'<li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>';
+            }
+        ?>
         </ul>
         <div class="logmen">
         <?php
+        error_reporting (E_ALL ^ E_NOTICE);
                     if (isset($_SESSION['userId'])){
-                        echo '<form action="../includes/logout.inc.php" method="post">
+                        echo 'Hello ' , $_SESSION['userUid'];
+                        echo '
+                        <form action="../includes/logout.inc.php" method="post">
                         <button type="submit" name="logout-submit" class="btn">Logout</button>
-                    </form>';
+                        </form>';
                     }
                     else{
                         echo ' <form action="../includes/login.inc.php" method="post">

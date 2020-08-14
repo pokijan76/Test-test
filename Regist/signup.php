@@ -40,6 +40,7 @@
                 <button type="submit" name="signup-submit" class="btn">Sign Up</button>
                 </form>
             </section>
+    </div>
     </main>
 
 <?php

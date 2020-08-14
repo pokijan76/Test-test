@@ -31,6 +31,7 @@ if (isset($_POST['login-submit'])){
                     session_start();
                     $_SESSION['userId'] =  $row['id'];
                     $_SESSION['userUid'] =  $row['username'];
+                    $_SESSION['userEmail'] = $row['email'];
                     
                     header("Location: ../Regist/index.php?login=success");
                     exit();
@@ -42,7 +43,7 @@ if (isset($_POST['login-submit'])){
             
             }
             else{
-                header("Location: ../Regist/index.php?error=no user");
+                header("Location: ../Regist/index.php?error=nouser");
                 exit();
         }
     }
